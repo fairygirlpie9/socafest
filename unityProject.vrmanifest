@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.caribbeanrhythmgame.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\LIV\\Documents\\ERoyer\\socafest\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Caribbean Rhythm Game [Testing]"
+        }
+      }
+    }
+  ]
+}
