@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/oceanandsandunwrapped100.abc
+Assets/StreamingAssets/oceanandsandunwrapped100.abc
