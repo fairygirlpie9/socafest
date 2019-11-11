@@ -34,6 +34,16 @@ public class mainScript : MonoBehaviour
         score = 0;
     }
 
+    public void switchOn()
+    {
+        movementDetectionActive = true;
+    }
+
+    public void switchOff()
+    {
+        movementDetectionActive = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
