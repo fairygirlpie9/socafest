@@ -21,7 +21,7 @@ public class mainScript : MonoBehaviour
 
     private int score;
 
-    public float lastTime;
+    private float lastTime;
 
 
     /* */
