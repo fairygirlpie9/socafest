@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class mainScript : MonoBehaviour
 {
@@ -62,10 +64,12 @@ public class mainScript : MonoBehaviour
                 lastPositionRight = positionRight;
                 lastTime = Time.time;
 
-                if((distanceLeft+distanceRight)/2.0f > Tolerance)
+                Debug.Log((distanceLeft + distanceRight) / 2.0f);
+
+                if ((distanceLeft+distanceRight)/2.0f > Tolerance)
                 {
                     score++;
-                    GOscore.GetComponent<TextMesh>().text = "SCORE: " + score;
+                    GOscore.GetComponent<TextMeshPro>().text = "SCORE: " + score;
                 }
             }
             
