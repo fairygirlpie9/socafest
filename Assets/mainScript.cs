@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using TMPro;
-
 
 public class mainScript : MonoBehaviour
 {
@@ -25,6 +25,10 @@ public class mainScript : MonoBehaviour
 
     private float lastTime;
 
+    public GameObject startButtton;
+    public GameObject backToBeginButton;
+
+    public GameObject mainTimeline;
 
     /* */
     // Start is called before the first frame update
@@ -32,6 +36,24 @@ public class mainScript : MonoBehaviour
     {
         lastWasActive = false;
         score = 0;
+    }
+
+    public void backToStart()
+    {
+        startButtton.SetActive(true);
+        mainTimeline.GetComponent<PlayableDirector>().time = 0;
+        mainTimeline.GetComponent<PlayableDirector>().Stop();
+        mainTimeline.GetComponent<PlayableDirector>().Evaluate();
+
+        mainTimeline.GetComponent<AudioSource>().Stop();
+    }
+
+    public void startTheThing()
+    {
+        mainTimeline.GetComponent<PlayableDirector>().Play();
+        mainTimeline.GetComponent<AudioSource>().time = 0;
+        mainTimeline.GetComponent<AudioSource>().Play();
+        startButtton.SetActive(false); //  mainTimeline.GetComponent<PlayableDirector>().Star();
     }
 
     public void switchOn()
