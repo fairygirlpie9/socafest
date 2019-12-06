@@ -29,8 +29,8 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: freestyle1_2d_Char00|freestyle1_2d_Char00
-  m_Speed: 1
+  m_Name: NEW PUMP
+  m_Speed: 1.3
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -42,8 +42,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -404248212106415800, guid: 75a1d967e00704a06a45091cd498216f,
-    type: 3}
+  m_Motion: {fileID: 966699460151557522, guid: 58a1669e7ff194d7c93e23d1ff12ac56, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -60,7 +59,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 2413327927127382209}
-    m_Position: {x: 440, y: 180, z: 0}
+    m_Position: {x: 450, y: 180, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
